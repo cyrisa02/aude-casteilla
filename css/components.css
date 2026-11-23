@@ -1,0 +1,532 @@
+/* ==========================================================================
+   BOUTONS
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.8rem;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-cta);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: scale(0.98) translateY(0);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-surface-light);
+  border-color: var(--color-text-muted);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   CARTES (OFFRES & TÉMOIGNAGES)
+   ========================================================================== */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.offer-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.offer-card p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+/* ==========================================================================
+   TÉMOIGNAGES
+   ========================================================================== */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-rating {
+  margin-bottom: var(--space-sm);
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-sm);
+  flex-grow: 1;
+}
+
+.testimonial-result {
+  display: inline-block;
+  background-color: rgba(197, 160, 89, 0.1);
+  color: var(--color-accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  align-self: flex-start;
+}
+
+/* Correction de l'accolade manquante ici */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-sm);
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   SPECTACLES SHOWCASE (Grille 3 colonnes)
+   ========================================================================== */
+.spectacle-showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+/* Sur PC, on passe à 3 colonnes */
+@media (min-width: 768px) {
+  .spectacle-showcase {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.showcase-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Force les cartes à avoir la même hauteur */
+}
+
+.showcase-img-wrapper {
+  position: relative;
+  width: 100%;
+  /* On force un ratio pour que les 3 images aient la même hauteur */
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.showcase-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image remplit la case sans se déformer */
+  transition: transform 0.3s ease;
+}
+
+.showcase-card:hover .showcase-img-wrapper img {
+  transform: scale(1.05); /* Petit zoom au survol */
+}
+
+.showcase-content {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.showcase-content h3 {
+  margin-bottom: var(--space-xs);
+  color: var(--color-accent);
+  font-size: 1.4rem;
+}
+
+.showcase-content p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   BLOC MASTERCLASS & VIDÉO (Version Propre)
+   ========================================================================== */
+.masterclass-video-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .masterclass-video-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.masterclass-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-main);
+}
+
+.masterclass-text p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.video-wrapper {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.video-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.video-link:hover img {
+  opacity: 1;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  padding-left: 6px; /* Centre visuellement le triangle */
+  box-shadow: 0 4px 20px rgba(211, 47, 47, 0.7);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.video-link:hover .play-button {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: var(--color-primary-hover);
+}
+
+/* ==========================================================================
+   ÉTATS DU FORMULAIRE (Erreurs, Succès, Spinner)
+   ========================================================================== */
+.form-group {
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.required {
+  color: var(--color-primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
+}
+
+/* État invalide */
+.form-group input.is-invalid,
+.form-group textarea.is-invalid {
+  border-color: var(--color-error);
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+/* Message d'erreur */
+.error-message {
+  display: block;
+  color: var(--color-error);
+  font-size: 0.8rem;
+  margin-top: var(--space-xs);
+  min-height: 1.2rem; /* Évite le saut de layout */
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.error-message.visible {
+  opacity: 1;
+}
+
+/* Checkbox RGPD */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-xs);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.3rem;
+}
+
+.checkbox-group label {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.checkbox-group .error-message {
+  flex-basis: 100%;
+  margin-left: 0;
+}
+
+/* Honeypot (invisible) */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 0.8s linear infinite;
+  margin-left: var(--space-xs);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Feedback global */
+.form-feedback {
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity var(--transition-slow);
+}
+
+.form-feedback.visible {
+  opacity: 1;
+}
+
+.form-feedback.success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+.form-feedback.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+
+/* ==========================================================================
+   BANNIÈRE COOKIES
+   ========================================================================== */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-surface);
+  border-top: 2px solid var(--color-accent);
+  padding: var(--space-md);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.cookie-content {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cookie-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.cookie-content p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  max-width: 800px;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.cookie-actions .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
