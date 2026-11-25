@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist Projet - Aude Casteilla</title>
+    <style>
+      /* --- NOUVELLE PALETTE POUR L'IMPRESSION (ÉCONOMIE D'ENCRE) --- */
+      :root {
+        --bg-color: #ffffff; /* Fond blanc pur */
+        --surface-color: #f8f9fa; /* Gris très très clair pour les cartes */
+        --primary-color: #d32f2f; /* Rouge (gardé pour les alertes) */
+        --accent-color: #333333; /* Titres en gris foncé/noir (au lieu de l'or) */
+        --text-main: #212529; /* Texte principal noir */
+        --text-muted: #6c757d; /* Texte secondaire gris */
+        --border-color: #dee2e6; /* Bordures grises claires */
+        --font-heading: "Playfair Display", serif;
+        --font-body:
+          "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-family: var(--font-heading);
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--text-main);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-family: var(--font-heading);
+        color: var(--text-main);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 5px;
+      }
+      .card {
+        background-color: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 20px;
+      }
+      .info-group {
+        margin-bottom: 20px;
+      }
+      .info-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: var(--text-main);
+      }
+      .info-group .hint {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 10px;
+        display: block;
+        font-style: italic;
+      }
+      /* Lignes à remplir : on utilise des bordures pointillées grises */
+      .input-line {
+        border-bottom: 1px dashed #a1a1aa;
+        height: 30px;
+        width: 100%;
+      }
+      .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .checkbox-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.9rem;
+      }
+      .checkbox-item input {
+        margin-top: 5px;
+      }
+      .note {
+        background-color: #fff3cd; /* Jaune très pâle pour l'avertissement */
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 20px 0;
+        font-size: 0.9rem;
+        color: #856404;
+      }
+      .rib-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .rib-container img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📋 Checklist de Démarrage - Projet Landing Page</h1>
+      <p>
+        Ce document sert à recueillir les informations indispensables pour la
+        rédaction des documents légaux, la facturation et le déploiement final
+        du site.
+      </p>
+
+      <h2>1. Informations Juridiques (Mentions Légales)</h2>
+      <div class="card">
+        <div class="info-group">
+          <label>Statut juridique de l'activité</label>
+          <span class="hint"
+            >Ex: Micro-entreprise, Auto-entrepreneur, SASU, Association loi
+            1901...</span
+          >
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Nom commercial / Raison sociale</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Numéro SIRET / SIREN</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Adresse du siège social</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Numéro de TVA Intracommunautaire (si assujetti)</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Responsable de la publication</label>
+          <span class="hint"
+            >Nom et prénom de la personne responsable du contenu du site.</span
+          >
+          <div class="input-line"></div>
+        </div>
+      </div>
+
+      <h2>2. Coordonnées & Contact</h2>
+      <div class="card">
+        <div class="info-group">
+          <label>Email de contact professionnel</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Numéro de téléphone professionnel</label>
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Adresse postale de contact (si différente du siège)</label>
+          <div class="input-line"></div>
+        </div>
+      </div>
+
+      <h2>3. Modalités de Paiement (Votre RIB)</h2>
+      <div class="card">
+        <div class="note">
+          <strong>Information :</strong> Voici mes coordonnées bancaires pour le
+          règlement des prestations (acompte et solde). <br /><em
+            >N'oubliez pas d'indiquer la référence de la facture/devis lors de
+            votre virement.</em
+          >
+        </div>
+
+        <div class="rib-container">
+          <!-- Remplacez le nom du fichier si votre image s'appelle autrement -->
+          <img src="rib.png" alt="Relevé d'Identité Bancaire (RIB)" />
+        </div>
+      </div>
+
+      <h2>4. Politique de Confidentialité (RGPD)</h2>
+      <div class="card">
+        <div class="info-group">
+          <label>Quelles données collectez-vous ?</label>
+          <span class="hint"
+            >Le formulaire collecte déjà : Nom, Email, Téléphone, Message.
+            Collectez-vous autre chose (ex: adresse, âge) ?</span
+          >
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label>Durée de conservation des données</label>
+          <span class="hint"
+            >Ex: 3 ans après le dernier contact (norme CNIL).</span
+          >
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label
+            >Utilisez-vous des outils tiers ? (Google Analytics, Mailchimp,
+            etc.)</label
+          >
+          <div class="input-line"></div>
+        </div>
+        <div class="info-group">
+          <label
+            >Contact pour les demandes de suppression de données (DPO)</label
+          >
+          <span class="hint">Souvent l'email de contact principal.</span>
+          <div class="input-line"></div>
+        </div>
+      </div>
+
+      <h2>5. Documents & Médiathèque (Pour le site final)</h2>
+      <div class="card">
+        <div class="checkbox-group">
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Photos haute résolution d'Aude (scène,
+            portrait)</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Affiches des spectacles (Page Bleue, Mon
+            Cabaret, etc.)</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Extraits vidéo (fichiers MP4 ou lien
+            YouTube)</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Logo officiel (format PNG ou SVG)</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Textes définitifs (Bio, description des
+            spectacles)</label
+          >
+          <label class="checkbox-item"
+            ><input type="checkbox" /> Avis clients authentiques (captures ou
+            texte)</label
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

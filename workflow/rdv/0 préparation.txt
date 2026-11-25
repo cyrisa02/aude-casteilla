@@ -1,0 +1,54 @@
+Salut Cyril ! Déjà, tu as un énorme atout : tu arrives avec un MVP quasi prêt (`index.html` avec spectacles, masterclass, avis, FAQ, formulaire, JSON-LD, cookies, mentions légales/confidentialité) et une grille tarifaire claire (`argumentaire-prix.html` à 450 € + options). Pour une personne que tu connais depuis peu, lui montrer du concret plutôt que de parler dans le vide est la meilleure façon de créer de la confiance.
+
+En revanche, **attention à deux pièges classiques** quand on vend à une relation récente ("plus ou moins une amie") :
+
+1. **Brader son prix pour faire plaisir ou par gêne** : si tu casses les prix, tu travailles presque gratuitement, tu crées un précédent gênant et tu te prives de revenus sur un projet qui demande déjà du cadrage, de l'intégration et des allers-retours.
+2. **Mélanger le statut de "projet démo/MVP" et de "site pro fini"** : dans `index.html`, il y a encore un bandeau d'avertissement MVP ("données présentées à titre de démonstration") et des avis/chiffres qu'il faudra valider ou remplacer par du réel avec elle.
+
+
+
+---
+
+### Mon avis sur ton offre et sur la baisse de prix
+
+Ta grille affiche **450 € TTC** pour la vitrine (avec 1re année d'hébergement/domaine incluse), **25 €/mois** (dès l'année 2) pour le Pack Sérénité, **150 €/mois** pour la Visibilité Locale, et des options IA sur devis.
+
+* **Est-ce que tu peux baisser les prix ?** Oui, **mais pas n'importe comment ni gratuitement**. 450 € est déjà ton prix d'appel : descendre plus bas te ferait perdre du temps précieux sans te rapporter grand-chose.
+* **Dans quelles limites baisser si tu veux lui faire un geste commercial ?**
+* **Le bon seuil plancher : autour de 350 € à 390 €** (soit environ 15 % à 20 % de remise max), **uniquement en échange d'une contrepartie concrète** : un témoignage client réel une fois le site en ligne, le droit de la citer en référence locale (Soissons / secteur), ou une recommandation auprès de son réseau artistique/événementiel/entreprises.
+* **Alternative encore plus maligne** : garder le tarif normal ou faire un petit geste sur l'entrée, et **offrir 1 ou 2 mois d'essai / d'accompagnement** sur la mise en ligne ou le suivi (plutôt que de brader le travail de création).
+
+
+
+---
+
+### Les arguments à mettre en avant pour gagner de l'argent (et conclure proprement)
+
+Quand tu es avec Aude, ne vends pas "du code" ou "des balises". Parle **bookings, masterclass remplies et gain de temps** :
+
+* **Un outil pensé pour remplir ses dates et sa masterclass** : elle a des spectacles (*Page Bleue*, *La Flamme de Noël*, *Mon Cabaret*), des masterclass (*L'Art du Chant Complet*) et des interventions entreprises/collectivités. Le site doit pousser les organisateurs, mairies, festivals et élèves vers la prise de contact/devis sans friction.
+
+
+* **Tu as déjà fait le gros du dégrossissage** : elle ne part pas d'une page blanche ; elle a déjà une structure claire (spectacles, masterclass, FAQ, contact), ce qui permet d'aller vite et d'éviter les devis d'agence à plusieurs milliers d'euros.
+
+
+* **Zéro charge mentale technique pour elle** : elle est artiste et formatrice, pas webmaster. Tu gères la mise en forme, les ajustements et la technique pendant qu'elle se concentre sur la scène et ses élèves.
+
+
+* **Une vraie suite logique une fois le site lancé** : une fois la vitrine en ligne, vous pourrez activer des leviers qui lui rapportent directement (visibilité locale sur ses zones de spectacles/ateliers, automatisation des demandes/devis ou relances).
+
+
+
+---
+
+### Comment mener le rendez-vous sans perdre la relation ni l'argent
+
+1. **Pose le cadre amical mais pro dès le début** : *"Je t'ai préparé une base concrète pour voir ce que ça peut donner pour tes spectacles et ta masterclass. On regarde ensemble si ça colle à ce que tu veux, et comment on peut avancer simplement."*
+2. **Valide d'abord le besoin et le contenu réel** : vérifie avec elle ce qu'elle veut garder, corriger ou retirer du MVP (notamment les chiffres, avis, mentions de compagnies/collectifs et visuels) pour qu'il n'y ait aucun malentendu sur le périmètre.
+
+
+3. **Annonce ton tarif clairement avec un geste cadré** : présente l'offre à 450 €, explique ce qui est compris, et propose ton geste d'ami/partenaire (ex. 350–390 € avec contrepartie référence/témoignage, ou petit geste sur le démarrage) plutôt que de brader à l'aveugle.
+
+
+
+Tu veux qu'on prépare ensemble les 3 ou 4 questions clés à lui poser pendant le rendez-vous pour verrouiller le périmètre et éviter les demandes sans fin ?
